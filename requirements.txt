@@ -1,0 +1,9 @@
+PySide6>=6.7,<6.9
+Pillow>=10,<12
+pillow-heif>=0.18,<1
+PyMuPDF>=1.24,<1.26
+zxing-cpp>=2.2,<3
+reportlab>=4,<5
+qrcode>=8,<9
+certifi>=2025.1.31
+pywin32>=306; sys_platform == "win32"

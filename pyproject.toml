@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gegexd-uom-printer"
+version = "1.2.56"
+description = "UOM自动打印"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "PySide6>=6.7,<6.9",
+  "Pillow>=10,<12",
+  "pillow-heif>=0.18,<1",
+  "PyMuPDF>=1.24,<1.26",
+  "zxing-cpp>=2.2,<3",
+  "reportlab>=4,<5",
+  "qrcode>=8,<9",
+  "certifi>=2025.1.31",
+]
+
+[project.optional-dependencies]
+windows = ["pywin32>=306"]
+build = ["pyinstaller>=6.10,<7"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+gegexd-uom-printer = "uom_printer.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
