@@ -8,7 +8,7 @@
 
 ## 下载后就能用
 
-在 Releases 下载 `UOM自动打印-Setup-v1.2.56.exe`，安装后从桌面启动。安装包已包含 Python 和界面运行环境，不需要另外安装 Python。
+在 Releases 下载 [`UOM-Auto-Printer-Setup-v1.2.56.exe`](https://github.com/GGXD1122/uom-auto-printer/releases/download/v1.2.56/UOM-Auto-Printer-Setup-v1.2.56.exe)，安装后从桌面启动。安装包已包含 Python 和界面运行环境，不需要另外安装 Python。公开下载文件名使用英文，安装后软件名称仍是“UOM自动打印”。
 
 连接标签打印机并安装对应的 Windows 驱动，在软件中选择打印机、纸张和每种标签的张数，然后登录右侧 UOM 官网。首次使用建议先手动打印一组，核对方向和实际尺寸。
 
